@@ -1,1 +1,76 @@
+@font-face {
 
+  font-family: 'Motionpicture';
+
+  src: url('./motionpicture.woff') format('woff2'),
+
+    url('./motionpicture.woff') format('woff');
+
+  font-weight: 600;
+
+  font-style: normal;
+
+}
+
+.header{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10em;
+  background-color: black;
+  color: white;
+  font-size: 2.5em;
+  width: 100%;
+  font-family: Motionpicture;
+}
+
+#homeMenu:hover{
+  color: #f2e599;
+}
+
+#menuMenu:hover{
+  color: #f2e599;
+}
+
+#aboutMenu:hover{
+  color: #f2e599;
+}
+
+.landing{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f2e599;
+  color:#968b36;
+  font-size: 2em;
+  padding: 2em;
+}
+
+.landingImage{
+  width: 100%;
+}
+
+.footer{
+  background-color: black;
+  color:white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width:100%;
+}
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #f2e599;
+    color:#968b36;
+    font-size: 2em;
+}
+
+.locationImage{
+  width: 100%;
+}
