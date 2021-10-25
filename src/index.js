@@ -1,6 +1,7 @@
 import './style.css';
 import landing from './landing';
 import contact from './contact';
+import menu from './menu';
 import LandingImage from './background.jpg';
 
 function removeAllChildNodes(parent) {
@@ -22,7 +23,7 @@ function init(){
   content.appendChild(landingImage);
 
   const description = document.createElement("article");
-  description.innerText = "Eat, sleep, repeat! This is our philosophy. Please select from the menu tab or contact us!";
+  description.innerText = "Eat, sleep, repeat! This is our philosophy. Please select from the menu or contact us!";
   landingDiv.appendChild(description);
 }
 
@@ -57,12 +58,8 @@ function createFooter(){
   footer.className+="footer";
 
   const creator = document.createElement("p");
-  creator.innerText = "Created by Tibor Enyedi";
+  creator.innerText = "Created by Tibor Enyedi - 2021";
   footer.appendChild(creator);
-
-  const copyright = document.createElement("p");
-  copyright.innerText="As part of the Odin Project ©";
-  footer.appendChild(copyright);
 
   content.appendChild(footer);
 }
@@ -85,6 +82,15 @@ function pageSwitch(){
   createHeader();
   contact();
   createFooter();
+  });
+
+  menuMenu.addEventListener("click", function(e){
+    content = document.querySelector("#content");
+    removeAllChildNodes(content);
+
+    createHeader();
+    menu();
+    createFooter();
   });
 
 }

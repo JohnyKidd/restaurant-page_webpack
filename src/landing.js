@@ -14,7 +14,7 @@ function landing(){
   content.appendChild(landingImage);
 
   const description = document.createElement("article");
-  description.innerText = "Eat, sleep, repeat! This is our philosophy. Please select from the menu tab or contact us!";
+  description.innerText = "Eat, sleep, repeat! This is our philosophy. Please select from the menu or contact us!";
   landingDiv.appendChild(description);
 
   pageSwitch();
